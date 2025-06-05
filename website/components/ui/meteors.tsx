@@ -15,12 +15,12 @@ export const Meteors = ({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.25 }}
     >
       {meteors.map((el, idx) => {
         const meteorCount = number || 20;
         // Calculate position to evenly distribute meteors across container width
-        const position = idx * (800 / meteorCount) - 400; // Spread across 800px range, centered
+        const position = idx * (2400 / meteorCount); // Spread across 800px range, centered
 
         return (
           <span
