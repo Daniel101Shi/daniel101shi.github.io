@@ -1,7 +1,5 @@
 import Hero from "@/components/hero";
-import Picture from "@/components/picture";
 import { Meteors } from "@/components/ui/meteors";
-import Image from "next/image";
 
 export default function Home() {
   return (
