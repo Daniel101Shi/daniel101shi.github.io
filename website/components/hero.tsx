@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="flex mt-16 ml-20 items-center gap-25">
         <Picture/>
         <h1 className="text-8xl font-bold text-black">
-          Hello, I'm Daniel...
+          Hello, I&apos;m Daniel...
         </h1>
       </div>
     );
