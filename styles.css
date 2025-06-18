@@ -9,3 +9,8 @@
     margin: 0;
     padding: 0;
 }
+
+.profile img{
+    width: 50px;
+    border-radius: 0%;
+}
