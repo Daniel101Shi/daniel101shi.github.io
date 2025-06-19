@@ -10,12 +10,11 @@
 
 /* Profile Picture */
 .profile img{
-    width: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    margin: 50px 0;
+    object-fit: cover; 
+    border: 3px solid rgba(255, 255, 255, 0.2); 
 }
 
 /* NavBar */
@@ -51,16 +50,19 @@
 .about-container {
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    
+    justify-content: center; 
+    gap: 40px;
+    padding: 40px 20px;
 }
 
 .about-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 40px;
     border-radius: 20px;
-    max-width: 350px;
+    max-width: 400px;
+    text-align: left;
 }
 
 
