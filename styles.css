@@ -127,6 +127,59 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Project grid */
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 60px auto 40px auto;
+    text-align: center;
+}
+
+.project h2 {
+
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-item {
+
+}
+
+.project-item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 58, 130, 0.3);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.project-item h3 {
+}
+
+.project-item p {
+}
+
+.project-item a {
+}
+
+.project-item a:hover {
+}
+
+.project-item a i {
+}
+
+
+
+
+
+
 
 /* Background */
 body {
