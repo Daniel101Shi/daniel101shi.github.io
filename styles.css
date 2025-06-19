@@ -1,7 +1,6 @@
 :root{
     --text-color: black;
     --link-color: #0000EE;
-    --primary-color: ;
 }
 * {
     box-sizing: border-box;
@@ -20,20 +19,33 @@
 }
 
 /* NavBar */
-navbar {
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    background-color: #b2afaf;
-
+    background-color: black;
     padding: 0 50px;
+    width: 100vw;
     height: 80px;
 }
 
-navbar .item a {
-    color: var(--text-color);
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    color: white;
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.nav-items a:hover {
+    color: #444;
 }
 
 /* Background */
@@ -46,7 +58,7 @@ body {
         }
 
         .content-container {
-            position: relative;
+            position: fixed;
             z-index: 10;
             max-width: 600px;
         }
