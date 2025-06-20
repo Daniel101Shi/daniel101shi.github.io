@@ -1,0 +1,1 @@
+Hi this is my personal portfolio website that I have made using HTML, CSS and JavaScript. I choose the MIT lisence since I want to encourage others to read through my styling and take snippits from it they find useful. I personally have learned a lot from studying other peoples work and would love to contribute back to the community.
