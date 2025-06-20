@@ -192,6 +192,10 @@
     color:  #ff3a82;
 }
 
+.project-links {
+    display: flex;
+    gap: 15px;
+}
 
 
 
