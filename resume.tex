@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel Shi} \\ \vspace{1pt}
+    \small 236-971-0028 $|$ \href{mailto:x@x.com}{\underline{dsa179@sfu.ca}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/danielshi101}} $|$
+    \href{https://github.com/...}{\underline{github.com/daniel101shi}}
+\end{center}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, HTML, CSS, Python, C++, Java, R, MATLAB} \\
+     \textbf{Frameworks/Libraries}{: React, Next.js, Framer Motion, Tensorflow, OpenCV, TailwindCSS, ShadCN, Aceternity} \\
+     \textbf{Tools \& Technologies}{: Git, GitHub, theMealDB JSON, Excel, Figma, Drawio}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{ML Engineer – Receipt OCR AI System (CMPT 310 Final Project)} $|$ \emph{Python, TensorFlow, OpenCV}}{Jun 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Building a machine learning system to extract structured text (e.g., totals, items) from real-world receipt images}
+        \resumeItem{Preprocessed public datasets and fine-tuned OCR models to improve text extraction accuracy on low-quality inputs}
+        \resumeItem{Integrated image preprocessing and prediction pipelines using TensorFlow and OpenCV}
+        \resumeItem{Exploring batch processing and CSV export features for scaling usability in future iterations}
+    \resumeItemListEnd
+
+  
+    \resumeProjectHeading
+        {\textbf{UI/UX Developer – Travelytics (CMPT 276 Final Project)} $|$ \emph{Next.js, TailwindCSS, TypeScript}}{May 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{Designed mid-fidelity wireframes and interactive mockups to visualize key features of a travel dashboard web app}
+            \resumeItem{Integrated GeoDB and WeatherAPI to display city and weather data using responsive components styled with TailwindCSS}
+            \resumeItem{Collaborating in an Agile Scrum team with Kanban task tracking and GitHub for source control and project planning}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Front-End Developer -- Personal Portfolio Website} $|$ \emph{Next.js, TailwindCSS, TypeScript}}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed a TypeScript-based portfolio using Next.js, TailwindCSS, and Framer Motion, deployed on Vercel}
+        \resumeItem{Developed custom UI components (Hero.tsx, grid.tsx) and animated layouts to enhance site engagement and visual storytelling.}
+        \resumeItem{Structured project data in data/index.ts and optimized dynamic content rendering for faster page load times.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Front-End Developer – Static HTML/CSS Portfolio Website (CMPT 276 Mini-Project)} $|$ \emph{HTML, CSS, JavaScript}}{Jun 2025}
+      \resumeItemListStart
+        \resumeItem{Built a personal portfolio website as part of a course mini-project and deployed it using GitHub Pages}
+        \resumeItem{Followed Agile SDLC with a Kanban board to organize tasks, milestones, and progress}
+        \resumeItem{Implemented custom wireframes, multi-section layout, and accessibility-compliant content}
+        \resumeItem{Used GitHub issues, labels, project board, and 30+ meaningful commits to meet course deliverables}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Web Developer -- Meal Fetcher (DreamHacks 2025)} $|$ \emph{Next.js, TailwindCSS, TypeScript}}{Mar 2025}
+      \resumeItemListStart
+        \resumeItem{Constructed a dynamic meal-finding web app using Next.js and theMealDB API, allowing users to search and retrieve custom meal data seamlessly}
+        \resumeItem{Designed modular UI components with ShadCN and TailwindCSS, for accessibility, code reusability}
+        \resumeItem{Implemented error handling in utils.js, ensuring reliable API interactions and improving data retrieval consistency.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Front-End Developer -- Flashcards Learning Site (JourneyHacks 2025)} $|$ \emph{Next.js, JavaScript, TailwindCSS}}{Feb 2025}
+      \resumeItemListStart
+        \resumeItem{Collaborated on a web-based flashcard app using JavaScript, Next.js, and TailwindCSS}
+        \resumeItem{Created a clean navigation UI and consistent design system}
+        \resumeItem{Participated in code reviews to ensure project cohesion and functionality}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Simon Fraser University – BSc. Computer Science – Software Systems}{May 2024 -- Present}
+      {Burnaby, BC}{}
+    \resumeSubheading
+      {University of Victoria – Coursework in Computer Science}{Sept 2023 -- May 2024}
+      {Victoria, BC}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Cashier/Barista – Presotea}{Sept 2021 -- Aug 2023}
+      {Delta \& Burnaby, BC}{}
+      \resumeItemListStart
+        \resumeItem{Accurately managed daily cash transactions totaling \$1,000+ while maintaining operational speed}
+        \resumeItem{Mentored and trained over 10 new staff on POS and barista procedures}
+        \resumeItem{Coordinated with team during peak hours to maintain efficiency and reduce wait times}
+        \resumeItem{Ensured inventory restocking and equipment maintenance to meet quality standards}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Media Coordinator – SFU Canadianized Asian Club}{Sept 2024 -- Present}
+      {Burnaby, BC}{}
+      \resumeItemListStart
+        \resumeItem{Captured and edited event photos using Adobe Lightroom and Photoshop, contributing to visually cohesive campaigns that improved event turnout}
+        \resumeItem{Coordinated with executive team members to ensure content deadlines were met, supporting successful promotional strategies.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------
+\section{Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item{Photography | Grappling | Bouldering | Calisthenics}
+\end{itemize}
+\end{document}
